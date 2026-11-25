@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store — Магазин техники Apple</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Apple<span>Store.</span></div>
+
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#about">О нас</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+
+    <button class="cart-btn" onclick="toggleCart()">
+        🛒 Корзина <span id="cart-count">0</span>
+    </button>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="subtitle">НОВОЕ ПОКОЛЕНИЕ ТЕХНОЛОГИЙ</p>
+        <h1>Технологии,<br>которые вдохновляют.</h1>
+        <p>Открой для себя мир Apple. Стиль, мощность и инновации в каждом устройстве.</p>
+        <a href="#catalog" class="hero-btn">Смотреть каталог</a>
+    </div>
+</section>
+
+<section class="catalog" id="catalog">
+    <div class="section-title">
+        <p>НАШ АССОРТИМЕНТ</p>
+        <h2>Популярные товары</h2>
+    </div>
+
+    <div class="products" id="products"></div>
+</section>
+
+<section class="about" id="about">
+    <p>ПОЧЕМУ МЫ?</p>
+    <h2>Больше, чем просто магазин.</h2>
+    <div class="features">
+        <div>
+            <h3>🚀 Быстрая доставка</h3>
+            <p>Доставляем заказы быстро и удобно.</p>
+        </div>
+        <div>
+            <h3>💎 Качество</h3>
+            <p>Техника в отличном состоянии.</p>
+        </div>
+        <div>
+            <h3>🛡️ Гарантия</h3>
+            <p>Гарантийная поддержка покупателей.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contacts" id="contacts">
+    <h2>Остались вопросы?</h2>
+    <p>Мы всегда готовы помочь тебе с выбором.</p>
+    <a href="mailto:shop@example.com">Связаться с нами</a>
+</section>
+
+<div class="cart-overlay" id="cart">
+    <div class="cart-window">
+        <button class="close" onclick="toggleCart()">✕</button>
+        <h2>Твоя корзина</h2>
+        <div id="cart-items"></div>
+        <h3>Итого: <span id="total">0</span> €</h3>
+        <button class="checkout" onclick="checkout()">Оформить заказ</button>
+    </div>
+</div>
+
+<footer>
+    <div class="logo">Apple<span>Store.</span></div>
+    <p>© 2026 AppleStore. Все права защищены.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
